@@ -114,6 +114,7 @@
               </div>
             </div>
 <!-- kontakt -->
+      <form method="post" action="email.php">
       <div id="kontakt" class="container-fluid hed-5 slideanim">
         <h1 style="text-align:center">CONTACT</h1><br><br>
         <div class="row">
@@ -140,7 +141,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
+      </div>
     <a id="toTop" title="Vrati se na početak" href="#pocetna">
       <span class="glyphicon glyphicon-circle-arrow-up"></span>
     </a>
@@ -151,7 +153,16 @@
       <p><span class="glyphicon glyphicon-copyright-mark"></span> Miodrag Gavrilović, 2018</p>
     </div>
   </footer>
+  <?php
+  $to      = 'gavrilovicmiodrag4@gmail.com';
+  $subject = 'the subject';
+  $message = 'hello';
+  $headers = 'From: webmaster@example.com' . "\r\n" .
+      'Reply-To: webmaster@example.com' . "\r\n" .
+      'X-Mailer: PHP/' . phpversion();
 
+  mail($to, $subject, $message, $headers);
+  ?> 
 </body>
 
 </html>
