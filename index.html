@@ -153,17 +153,6 @@
       <p><span class="glyphicon glyphicon-copyright-mark"></span> Miodrag Gavrilović, 2018</p>
     </div>
   </footer>
-  <?php
-  $to      = 'gavrilovicmiodrag4@gmail.com';
-  $subject = 'the subject';
-  $message = 'hello';
-  $headers = 'From: webmaster@example.com' . "\r\n" .
-      'Reply-To: webmaster@example.com' . "\r\n" .
-      'X-Mailer: PHP/' . phpversion();
-
-  $m = mail($to, $subject, $message, $headers);
-  echo $m;
-  ?>
 </body>
 
 </html>
