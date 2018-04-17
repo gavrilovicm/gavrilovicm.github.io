@@ -1,0 +1,305 @@
+html{
+  height:100%;
+  width: 100%;
+}
+#pozadina{
+  background-image: url("./images/carbon-fiber.jpg");
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -55;
+}
+#myNavbar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#prvi.navbar-nav li a:hover, #prvi.navbar-nav li.active a{
+
+}
+#container{
+  background-color: white;
+  width: auto;
+  height: auto;
+}
+
+body{
+  width: 100%;
+  height: auto;
+}
+main{
+  height: auto;
+  width: 100%;
+  margin-top: 100px;
+}
+#naslovna{
+  opacity: 0;
+}
+.nav-up{
+  top: -50px;
+  transition: top 0.3s ease-in-out;
+}
+.nav-down{
+  top:0;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar-brand{
+  padding: 0px;
+}
+
+.hed-1{
+  color:white;
+  height: 25%;
+  max-height: 25%;
+}
+.hed-1 > img{
+  max-height: 100%;
+  display: inline;
+}
+nav{
+  height: auto;
+  width: auto;
+}
+
+.complete{
+  display: none;
+}
+.more{
+  color:black;
+  cursor: pointer;
+}
+
+.hed-2{
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  padding: 8% 10%;
+  display: none;
+}
+
+#myCarousel{
+  text-align: center;
+  overflow: hidden;
+}
+.carousel-inner{
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.carousel-inner > .item > img{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hed-3{
+  background-color: #515151;
+  color: white;
+  margin-top:auto;
+  margin-bottom: auto;
+  padding: 8% 10%;
+}
+
+.hed-4{
+  background-color: white;
+  margin-top:auto;
+  margin-bottom: auto;
+  padding: 8% 10%;
+}
+.hed-5{
+  background-color: #515151;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 8% 10%;
+}
+#toTop{
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+  font-size: 50px;
+  color: black;
+  opacity: 0;
+
+}
+
+.slideanim{
+  visibility: hidden;
+}
+.slide{
+  animation-name: slide;
+  animation-duration: 1s;
+
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide{
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide{
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.logo{
+  font-size: 100px;
+}
+#edu{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#kontakt{
+  margin-bottom: 0px;
+}
+
+
+.gly-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+#oMeniWrap{
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: .9;
+  padding-right: 30%;
+}
+#oMeni{
+  padding-left: 3px;
+}
+
+#opis{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+#logo_img{
+  max-height: 50px;
+}
+#opis img{
+  height: auto;
+  max-height: 280px;
+}
+
+#profilna{
+  height: auto;
+  max-height: 280px;
+}
+
+@media (max-width:768px) {
+  .hed-1{
+    text-align: center;
+    margin: auto 0px;
+  }
+  #opis{
+    display: inline;
+    width:100%;
+    margin: 10px 0px;
+    height: auto;
+  }
+  #oMeniWrap{
+    padding: 0px 0px;
+    margin: auto 0px;
+    max-height: 150px;
+  }
+  #profilna #naslovna{
+    max-height: 150px;
+  }
+  main{
+    height: auto;
+    margin-top: 50px;
+    width: auto;
+  }
+}
+@media (min-width:768px) {
+  #myNavbar{
+    top:0 !important;
+  }
+  nav{
+
+    top:0px !important;
+  }
+}
+footer{
+  height:auto;
+  width:100%;
+  background-color: #515151;
+}
+footer p{
+  margin:0px;
+}
+@media (min-width:768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  #container p{
+    font-size: 22px;
+  }
+}
+
+@media (max-width:768px) {
+  .carousel-inner{
+    height:250px;
+    max-height: 250px;
+  }
+}
