@@ -14,9 +14,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="stil.css">
   <script type='text/javascript' src="javascript.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117752202-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117752202-1');
+</script>
+
 </head>
 
 <body data-spy="scroll" data-targer=".navbar" data-offset="60">
+
+
+
   <!-- Navigacioni bar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -29,16 +42,18 @@
         <a class="brand" id="logo" href="#pocetna">
           <img id ="logo_img" src="./images/logo_mg.png" alt="logo">
         </a>
+
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul id="prvi" class="nav navbar-nav">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#studije">STUDIES</a></li>
-          <li><a href="#projekti">PROJECTS</a></li>
-          <li><a href="#kontakt">CONTACT</a></li>
+          <li><a href="#home">POČETNA</a></li>
+          <li><a href="#studije">STUDIJE</a></li>
+          <li><a href="#projekti">PROJEKTI</a></li>
+          <li><a href="#kontakt">KOTAKT</a></li>
         </ul>
+
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://www.linkedin.com/in/gavrilovic-miodrag/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:20px"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/gavrilovic-miodrag/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:20px"></i></a></li>
           <li><a href="https://github.com/gavrilovicm" target="_blank"><i class="fa fa-github" aria-hidden="true" style="font-size:20px"></i></a></li>
           <li><a href="https://twitter.com/shugibugii" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="font-size:20px"></i></a></li>
           <li><a href="https://www.facebook.com/shugibugii" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size:20px"></i></a></li>
@@ -58,20 +73,22 @@
       <div id="oMeniWrap" class="container-fluid text-left hed-1 col-sm-6">
       <div id="oMeni" class="">
         <p><span class="glyphicon glyphicon-education"></span> IT Student.</p>
-        <p><span  class="glyphicon glyphicon-wrench gly-spin"></span> WEB Design.</p>
-        <p><span class="glyphicon glyphicon-heart-empty"></span> Waterpolo player.</p>
-        <p><span class="glyphicon glyphicon-fire"></span> Car enthusiast.</p>
+        <p><span  class="glyphicon glyphicon-wrench gly-spin"></span> WEB Programer.</p>
+        <p><span class="glyphicon glyphicon-heart-empty"></span> Vaterpolo igrač.</p>
+        <p><span class="glyphicon glyphicon-fire"></span> Zaljubljenik u automobile.</p>
       </div>
       </div>
     </div>
     <div id="container">
-
+      <!-- <div id="jezik">
+        <span><a href="./en/index.html">en</a></span><br>
+        <span class=""><a>sr</a></span>
+      </div> -->
 <!-- o meni -->
     <div id="home" class="container-fluid hed-2">
-      <h1 style="text-align:center">HOME</h1><br>
+      <h1 style="text-align:center">POČETNA</h1><br>
       <h2>Ćao svima!</h2><br>
-      <p>Moje ime je Miodrag Gavrilović. Za razliku od nekih koji u ovom uvodnom delu stave nešto tipa
-      "ne znam šta bih mogao o sebi da kažem", ja baš imam dosta toga o sebi da vam napišem.</p>
+      <p>Moje ime je Miodrag Gavrilović. </p>
       <a id="prikazi_vise" href="#produzi" data-toggle="collapse">Prikaži više..</a>
       <br><br>
       <p id="produzi" class="collapse">
@@ -89,7 +106,7 @@
     </div>
 <!-- deo o studijama-->
       <div id="studije" class="container-fluid hed-3 slideanim">
-        <h1 style="text-align:center">STUDIES</h1><br>
+        <h1 style="text-align:center">STUDIJE</h1><br>
         <div class="row">
           <div class="col-sm-8">
             <p>Student sam treće godine Matematičkog fakulteta, Univerziteta u Beogradu.
@@ -102,7 +119,7 @@
       </div>
       <!-- deo o projektima -->
             <div id="projekti" class="container-fluid hed-4 slideanim">
-              <h1 style="text-align:center">PROJECTS</h1><br>
+              <h1 style="text-align:center">PROJEKTI</h1><br>
               <div class="row">
                 <div class="col-sm-4" style="text-align:center">
                   <img src="./images/design.jpg" style="height:200px; width:200px; margin-left:auto; margin-right:auto">
@@ -117,10 +134,10 @@
             </div>
 <!-- kontakt -->
       <div id="kontakt" class="container-fluid hed-5 slideanim">
-        <h1 style="text-align:center">CONTACT</h1><br><br>
+        <h1 style="text-align:center">KONTAKT</h1><br><br>
         <div class="row">
           <div class="col-sm-6">
-            <p class="linkedin"><span class="fa fa-linkedin"></span> /in/gavrilovic-miodrag</p>
+            <p class="linkedin"><span class="fa fa-linkedin-square"></span> /in/gavrilovic-miodrag</p>
             <p class="twitter"><span class="fa fa-twitter"></span> @shugibugii</p>
             <p class="git"><span class="fa fa-github"></span> @gavrilovicm</p>
           </div>

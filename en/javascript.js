@@ -11,9 +11,9 @@ $(document).ready(function(){
 //animacija za prikazivanje ostatka teksta
   $("#prikazi_vise").click(function(){
     if (($("#produzi").height() == $("#produzi")[0].scrollHeight)&&($("#produzi").height() != 0)){
-      $("#prikazi_vise").html("Prikaži više..");
+      $("#prikazi_vise").html("dropdown");
     }
-      else $("#prikazi_vise").html("Prikaži manje..");
+      else $("#prikazi_vise").html("dropdown");
     });
 //animacija za skakanje na deo strane
   $("#prvi a, #toTop, #logo").on('click', function(event){
