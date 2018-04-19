@@ -125,6 +125,15 @@ nav{
   opacity: 0;
 
 }
+#en{
+  position: absolute;
+  right: 5%;
+  top: 50px;
+  font-size: 50px;
+  color: white;
+  opacity: 1;
+
+}
 
 .slideanim{
   visibility: hidden;
