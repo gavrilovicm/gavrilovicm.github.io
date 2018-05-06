@@ -51,7 +51,7 @@ $("#logo").on('click', function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
+      if (pos < winTop + 1000) {
         $(this).addClass("slide");
       }
 
@@ -66,8 +66,29 @@ $("#logo").on('click', function(){
       $("#toTop").css("opacity", 0).addClass("fade");
     }
 
+    //dugme za promenu jezika
+    var pos=$(window).scrollTop();
+
+    if (pos < 200) {
+      $("#en").css("opacity", 1).addClass("fade");
+    }
+    else{
+      $("#en").css("opacity", 0).addClass("fade");
+    }
+
+
     didScroll = true;
   });
+
+//  scroll to the top
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+
 //
 // //automatsko sakrivanje navbar-a
 //   setInterval(function(event)  {

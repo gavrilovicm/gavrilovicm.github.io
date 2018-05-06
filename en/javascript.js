@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 //animacija za skakanje na deo strane
   $("#prvi a, #toTop, #logo").on('click', function(event){
-    if (this.hash !== "") {
+    if (this.hash != "") {
       event.preventDefault();
 
       var hash = this.hash;
@@ -51,7 +51,7 @@ $("#logo").on('click', function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
+      if (pos < winTop + 1000) {
         $(this).addClass("slide");
       }
 
