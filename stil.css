@@ -117,6 +117,14 @@ nav{
   margin-bottom: auto;
   padding: 8% 10%;
 }
+.hed-6{
+  background-color: #515151;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 8% 10%;
+}
+
 #toTop{
   position: fixed;
   left: 5px;
@@ -139,6 +147,17 @@ nav{
 #ensr{
   font-size: 20px;
 
+}
+
+#tools{
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  /* padding-left: 50px;
+  padding-top: 100px; */
+  font-size: 50px;
+  color: white;
+  opacity: 1;
 }
 
 
